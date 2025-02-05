@@ -54,5 +54,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Admin User',
             'email' => 'admin@example.com',
         ])->assignRole(RolesEnum::Admin);
+
+        Feature::factory(100)->create();
     }
 }
